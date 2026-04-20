@@ -1,0 +1,33 @@
+{
+  "name": "PositionOverride",
+  "type": "object",
+  "properties": {
+    "division_id": {
+      "type": "string",
+      "title": "Division"
+    },
+    "team_id": {
+      "type": "string",
+      "title": "Team"
+    },
+    "league_type": {
+      "type": "string",
+      "title": "League Type",
+      "enum": [
+        "singles",
+        "doubles",
+        "captains"
+      ]
+    },
+    "manual_position": {
+      "type": "number",
+      "title": "Manual Position"
+    }
+  },
+  "required": [
+    "division_id",
+    "team_id",
+    "league_type",
+    "manual_position"
+  ]
+}

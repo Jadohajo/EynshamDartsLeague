@@ -1,0 +1,28 @@
+{
+  "name": "Division",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Division Name"
+    },
+    "season": {
+      "type": "string",
+      "title": "Season"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "active",
+        "completed",
+        "upcoming"
+      ],
+      "default": "active"
+    }
+  },
+  "required": [
+    "name",
+    "season"
+  ]
+}

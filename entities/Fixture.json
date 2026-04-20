@@ -1,0 +1,198 @@
+{
+  "name": "Fixture",
+  "type": "object",
+  "properties": {
+    "division_id": {
+      "type": "string",
+      "title": "Division"
+    },
+    "home_team_id": {
+      "type": "string",
+      "title": "Home Team"
+    },
+    "away_team_id": {
+      "type": "string",
+      "title": "Away Team"
+    },
+    "date": {
+      "type": "string",
+      "format": "date",
+      "title": "Match Date"
+    },
+    "week_number": {
+      "type": "number",
+      "title": "Week Number"
+    },
+    "status": {
+      "type": "string",
+      "title": "Status",
+      "enum": [
+        "scheduled",
+        "in_progress",
+        "completed"
+      ],
+      "default": "scheduled"
+    },
+    "approval_status": {
+      "type": "string",
+      "title": "Approval Status",
+      "enum": [
+        "pending",
+        "approved"
+      ],
+      "default": "pending"
+    },
+    "home_singles_wins": {
+      "type": "number",
+      "default": 0
+    },
+    "away_singles_wins": {
+      "type": "number",
+      "default": 0
+    },
+    "home_doubles_wins": {
+      "type": "number",
+      "default": 0
+    },
+    "away_doubles_wins": {
+      "type": "number",
+      "default": 0
+    },
+    "home_captains_win": {
+      "type": "number",
+      "default": 0
+    },
+    "away_captains_win": {
+      "type": "number",
+      "default": 0
+    },
+    "home_total_legs": {
+      "type": "number",
+      "default": 0
+    },
+    "away_total_legs": {
+      "type": "number",
+      "default": 0
+    },
+    "singles_matches": {
+      "type": "array",
+      "title": "Singles Matches",
+      "items": {
+        "type": "object",
+        "properties": {
+          "home_player": {
+            "type": "string"
+          },
+          "away_player": {
+            "type": "string"
+          },
+          "home_legs": {
+            "type": "number"
+          },
+          "away_legs": {
+            "type": "number"
+          },
+          "home_180s": {
+            "type": "number",
+            "default": 0
+          },
+          "away_180s": {
+            "type": "number",
+            "default": 0
+          },
+          "home_checkout": {
+            "type": "number",
+            "default": 0
+          },
+          "away_checkout": {
+            "type": "number",
+            "default": 0
+          }
+        }
+      }
+    },
+    "doubles_matches": {
+      "type": "array",
+      "title": "Doubles Matches",
+      "items": {
+        "type": "object",
+        "properties": {
+          "home_player1": {
+            "type": "string"
+          },
+          "home_player2": {
+            "type": "string"
+          },
+          "away_player1": {
+            "type": "string"
+          },
+          "away_player2": {
+            "type": "string"
+          },
+          "home_legs": {
+            "type": "number"
+          },
+          "away_legs": {
+            "type": "number"
+          },
+          "home_180s": {
+            "type": "number",
+            "default": 0
+          },
+          "away_180s": {
+            "type": "number",
+            "default": 0
+          },
+          "home_checkout": {
+            "type": "number",
+            "default": 0
+          },
+          "away_checkout": {
+            "type": "number",
+            "default": 0
+          }
+        }
+      }
+    },
+    "captains_match": {
+      "type": "object",
+      "title": "Captain's Match",
+      "properties": {
+        "home_player": {
+          "type": "string"
+        },
+        "away_player": {
+          "type": "string"
+        },
+        "home_legs": {
+          "type": "number"
+        },
+        "away_legs": {
+          "type": "number"
+        },
+        "home_180s": {
+          "type": "number",
+          "default": 0
+        },
+        "away_180s": {
+          "type": "number",
+          "default": 0
+        },
+        "home_checkout": {
+          "type": "number",
+          "default": 0
+        },
+        "away_checkout": {
+          "type": "number",
+          "default": 0
+        }
+      }
+    }
+  },
+  "required": [
+    "division_id",
+    "home_team_id",
+    "away_team_id",
+    "date"
+  ]
+}

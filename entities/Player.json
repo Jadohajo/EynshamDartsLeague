@@ -1,0 +1,23 @@
+{
+  "name": "Player",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Player Name"
+    },
+    "team_id": {
+      "type": "string",
+      "title": "Team"
+    },
+    "is_captain": {
+      "type": "boolean",
+      "title": "Is Captain",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "team_id"
+  ]
+}

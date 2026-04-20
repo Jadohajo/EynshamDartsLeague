@@ -1,0 +1,26 @@
+{
+  "name": "Team",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "title": "Team Name"
+    },
+    "division_id": {
+      "type": "string",
+      "title": "Division"
+    },
+    "venue": {
+      "type": "string",
+      "title": "Home Venue"
+    },
+    "captain": {
+      "type": "string",
+      "title": "Captain Name"
+    }
+  },
+  "required": [
+    "name",
+    "division_id"
+  ]
+}
